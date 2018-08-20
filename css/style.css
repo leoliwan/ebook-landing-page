@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,800');
+@import url('https://fonts.googleapis.com/css?family=Niconne');
+
+:root {
+    --primary-color: rgba(255, 77, 0, 1);
+    --secondary-color: #111;
+  }
+body {
+    font-family: Montserrat; 
+}
+
+
+/* -- Navbar -- */
+.navbar ul li a {
+    color: var(--secondary-color)!important;
+}
+.navbar ul li a:hover {
+    color:  var(--primary-color);
+}
+/*---- Logo --- */
+.navbar-brand {
+    color: #111;
+    font-family: 'Niconne', cursive;
+    font-size: 40px;
+    font-weight: 800;
+}
+.fire {
+    color: var(--primary-color);
+}
+
+
+#home-section {
+    position: relative;
+  background: url("../img/bg_freelance.jpeg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height:650px; }
+  #home-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 650px; }
+  #home-section .h-round {
+    border-radius: 20px; }
+  #home-section .intro {
+    margin-top: 120px !important; }
+
+/* subscribe section */
+#home-section .subscribe {
+    background-color: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     min-height: 20px; }
+.subscribe input {
+    border-radius: 30px;
+    border: 1px solid var(--primary-color);
+}
+.subscribe button {
+    border-radius: 30px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+}
+.intro a {
+    color: #fff;
+    margin-top: 50px!important;
+    border-radius: 20px; 
+    background-color: var(--primary-color);
+}
+.intro a:hover {
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid #fff;
+}
+.intro .ebook_download {
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid #fff;
+}
+.intro .ebook_download:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.succesful {
+    color:  var(--primary-color);
+}
+
+#ebook_intro i {
+    color: #fff;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    padding: .5em;
+}
+#ebook_intro h4 {
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+
+  /* CTA */
+
+  #cta {
+    position: relative;
+    background: url("../img/laptop.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height:550px; }
+
+#cta .dark_overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 550px; 
+}
+#cta h3 {
+    margin-top: 80px;
+}
+#cta h2 {
+    margin-top: 1em;
+    color: var(--primary-color);
+}
+#cta a {
+    background-color: var(--primary-color);
+    margin-top: 3em;
+    padding: 1.3em 3em !important;
+    border-radius: 40px;
+}
+#cta i {
+    color: var(--primary-color);
+    font-size: 34px;
+    margin: 1em;
+}
+  
+  #cta .cloud_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/cloud.png");
+      animation: animate 300s linear infinite;
+  }
+
+  @keyframes animate {
+      0% {
+          background-position: 0px;
+      }
+      100% {
+          background-position: 5440px;
+      }
+  }
+  /* Contact */
+  #contact button {
+    border-radius: 30px;
+    border: 1px solid rgb(250, 26, 71);
+    background-color: rgb(250, 26, 71);
+  }
+
+#contact {
+  background: url("../img/create-section1.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px; }
+  #contact .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    min-height: 555px; }
+  #contact h5 {
+    border-radius: 20px; }
+
+#services {
+  background: url("../img/mockup2.jpeg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px; }
+  #services .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    min-height: 610px; }
+  #services .box-overlay {
+    background-color: rgba(0, 0, 0, 0.3); }
+  #services .fa {
+    color: #fff;
+    background: #80BDFF;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 10px; }
+  #services .img-size {
+    height: 70px !important; }
+
+#explore-section {
+  border-bottom: 2px solid #008ed6; }
+
+footer a i {
+  font-size: 3em;
+  color: #fff; }
+
+footer a i:hover {
+  color: #008ed6; }
+
+
+
+  /* Media Querries */
+
+  @media screen and (max-width: 399px) {
+    .intro h1 {
+        font-weight: 300!important;
+        font-size: 30px!important;
+    }
+    .intro a {
+        padding: .3em 1em!important;
+    }
+    .intro .ebook_download {
+        margin-top: 16px!important;
+    }
+
+    #cta h3 {
+        margin-top: 30px;
+        font-size: 35px!important;
+    }
+    #cta h2 {
+       font-size: 28px;
+       margin-bottom: 20px;
+       font-weight: 200;
+    }
+    #cta a {
+        margin: 2em 0;
+        padding: .5em 1em!important;
+    }
+    #cta i {
+        font-size: 34px;
+        display: inline;
+    }
+  }
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    #home-section {
+        min-height:50px !important;
+    }
+    #home-section .intro {
+        margin-top: 50px !important; 
+    }
+    #home-section a {
+        display: block;
+    }
+    .intro h1 {
+        font-weight: 300 !important;
+        font-size: 30px!important;
+    }
+
+    .intro a {
+        padding: .3em 1em!important;
+    }
+    .intro .ebook_download {
+        margin-top: 16px!important;
+    }
+    
+    #cta h3 {
+        margin-top: 40px!important;
+        font-size: 35px!important;
+    }
+    #cta h2 {
+       font-size: 28px;
+       margin-bottom: 20px;
+       font-weight: 200;
+    }
+    #cta a {
+        padding: .5em 1em!important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #home-section .intro {
+        margin-top: 80px !important; 
+    }
+    .intro h1 {
+        font-weight: 400 !important;
+    }
+    #home-section .subscribe {
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+    }
+    .subscribe input, .subscribe button {
+        margin-top: 1em;
+    }
+    .subscribe .row {
+       padding-top: 0;
+    }
+    .subscribe h3 {
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 0 !important;
+    }
+
+    #cta h3 {
+        margin-top: 25px!important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 994px) {
+    #cta h3 {
+        margin-top: 20px!important;
+        font-size: 54px!important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    #ebook_intro img { 
+        width: 80%!important;
+    }
+    #ebook_intro p {
+        font-size: 18px!important;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    #ebook_intro img { 
+        width: 70%!important;
+    }
+}
